@@ -8,7 +8,7 @@ st.set_page_config(page_title="student marks prediction",layout="centered")
 st.title("student marks prediction")
 st.write("this app predicts student marks based on the number of hours studied")
 
-df = pd.read_csv("marks.csv ")
+df = pd.read_csv("marks.csv")
 x = df[["Study_hours"]]
 y = df[["Marks"]]
 x_train,x_test,y_train,y_test = train_test_split(x , y, test_size=0.2, random_state=42)
